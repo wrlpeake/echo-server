@@ -3,12 +3,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-class MyFirstJUnitJupiterTests {
+class MainTest {
 
     public Main testing = new Main();
 
     @Test
-    public void test() {
+    public void helloWorldTest() {
         String test = testing.helloWorld();
         assertEquals(("Hello world!"), test);
     }
