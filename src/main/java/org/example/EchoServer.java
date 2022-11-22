@@ -7,7 +7,7 @@ public class EchoServer {
 
     public ServerSocket serverSocketCreator(int portNumber) throws IOException {
         ServerSocket serverSocket = new ServerSocket(portNumber);
-        System.out.println("--- Running echo server on port 8080 ---");
+        System.out.println("--- Running echo server ---");
         return serverSocket;
     }
 }
