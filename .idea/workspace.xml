@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Create EchoServer.java, EchoServerTest.java and EchoSocket.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SocketIO.java" afterDir="false" />
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EchoSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EchoSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +73,7 @@
       <updated>1668772247538</updated>
       <workItem from="1668772249179" duration="9503000" />
       <workItem from="1669022156776" duration="6404000" />
-      <workItem from="1669108755120" duration="1835000" />
-      <workItem from="1669111081651" duration="12682000" />
+      <workItem from="1669108755120" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1668786009970</created>
@@ -106,21 +103,7 @@
       <option name="project" value="LOCAL" />
       <updated>1669031441570</updated>
     </task>
-    <task id="LOCAL-00005" summary="Created Echo Server spike to better understand the technical requirements.">
-      <created>1669109482969</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1669109482969</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Create EchoServer.java, EchoServerTest.java and EchoSocket.java">
-      <created>1669133638658</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1669133638658</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,8 +124,6 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Add README.md" />
     <MESSAGE value="Update ReadME.md" />
-    <MESSAGE value="Created Echo Server spike to better understand the technical requirements." />
-    <MESSAGE value="Create EchoServer.java, EchoServerTest.java and EchoSocket.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create EchoServer.java, EchoServerTest.java and EchoSocket.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update ReadME.md" />
   </component>
 </project>
