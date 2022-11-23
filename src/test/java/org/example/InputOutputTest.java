@@ -15,6 +15,7 @@ public class InputOutputTest {
     public InputOutput inputOutputTest = new InputOutput();
     Socket mockSocket = Mockito.mock(Socket.class);
     InputStream mockInputStream = Mockito.mock(InputStream.class);
+    OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
 
     @Test
     public void getUserInputTest() throws IOException {
@@ -44,6 +45,13 @@ public class InputOutputTest {
 
         assertNotNull(inputOutputTest.getSocketInputStream(mockSocket));
 
+    }
+
+    @Test
+    public void sendSocketOutputStreamTest() throws IOException {
+        when(mockSocket.getOutputStream()).thenReturn(mockOutputStream);
+
+        assertNotNull(inputOutputTest.sendSocketOutputStream(mockSocket));
     }
 
 }
