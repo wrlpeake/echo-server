@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Create InputOutput.java &amp; InputOutputTest.java" />
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Create EchoServer.java, EchoServerTest.java and EchoSocket.java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
