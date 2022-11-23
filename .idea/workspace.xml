@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Create InputOutput.java &amp; InputOutputTest.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669031441570</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Create InputOutput.java &amp; InputOutputTest.java">
+      <created>1669217288469</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669217288469</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +127,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Add README.md" />
     <MESSAGE value="Update ReadME.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update ReadME.md" />
+    <MESSAGE value="Create InputOutput.java &amp; InputOutputTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create InputOutput.java &amp; InputOutputTest.java" />
   </component>
 </project>
