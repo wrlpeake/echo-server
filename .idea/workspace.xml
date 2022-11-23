@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Implements `getSocketInputStream(Socket socket)` function.">
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Implements `sendSocketOutputStream(Socket socket)` function.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EchoSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientSocket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669219454236</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implements `sendSocketOutputStream(Socket socket)` function.">
+      <created>1669220574960</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669220574960</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,7 +149,8 @@
     <MESSAGE value="Update ReadME.md" />
     <MESSAGE value="Create InputOutput.java &amp; InputOutputTest.java" />
     <MESSAGE value="Implements `getSocketInputStream(Socket socket)` function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implements `getSocketInputStream(Socket socket)` function." />
+    <MESSAGE value="Implements `sendSocketOutputStream(Socket socket)` function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implements `sendSocketOutputStream(Socket socket)` function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

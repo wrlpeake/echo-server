@@ -44,7 +44,6 @@ public class InputOutputTest {
         when(mockSocket.getInputStream()).thenReturn(mockInputStream);
 
         assertNotNull(inputOutputTest.getSocketInputStream(mockSocket));
-
     }
 
     @Test
@@ -52,6 +51,28 @@ public class InputOutputTest {
         when(mockSocket.getOutputStream()).thenReturn(mockOutputStream);
 
         assertNotNull(inputOutputTest.sendSocketOutputStream(mockSocket));
+    }
+
+    @Test
+    public void readClientSocketInputStreamTest() throws IOException {
+        String inputStream = "testing 123";
+        BufferedReader bufferedReaderTest =                                       // 4th statement
+                new BufferedReader(
+                        new InputStreamReader(new ByteArrayInputStream(inputStream.getBytes())));
+
+        assertEquals(inputStream, inputOutputTest.readClientInputStream(bufferedReaderTest));
+    }
+
+    @Test
+    public void writeClientSocketOutputStreamTest() {
+        String clientMessage = "mic check 1, 2";
+        ByteArrayOutputStream output = new ByteArrayOutputStream();
+
+        PrintWriter writer = new PrintWriter(output, true);
+
+        inputOutputTest.writeClientOutputStream(writer, clientMessage);
+
+        assertEquals((clientMessage + "\n"), output.toString());
     }
 
 }

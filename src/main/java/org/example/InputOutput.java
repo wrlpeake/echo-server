@@ -24,4 +24,12 @@ public class InputOutput {
     public PrintWriter sendSocketOutputStream(Socket socket) throws IOException {         // 2nd statement
         return new PrintWriter(socket.getOutputStream(), true);
     }
+
+    public String readClientInputStream(BufferedReader inputStream) throws IOException {
+        return inputStream.readLine();
+    }
+
+    public void writeClientOutputStream(PrintWriter writer, String clientMessage) {
+        writer.println(clientMessage);
+    }
 }

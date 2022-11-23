@@ -13,7 +13,7 @@ import java.net.Socket;
 class EchoServerTest {
 
     public EchoServer echoServerTest = new EchoServer();
-    public EchoSocket echoSocketTest = new EchoSocket();
+    public ClientSocket clientSocketTest = new ClientSocket();
 
     @Test
     public void testServerSocketGetsCreated() throws IOException {
@@ -23,16 +23,17 @@ class EchoServerTest {
     @Test
     public void testServerSocketCreatedWithCorrectPort() throws IOException {
         int portNumber = 7777;
-        ServerSocket testServerSocket = echoServerTest.serverSocketCreator(portNumber);
+        try (ServerSocket testServerSocket = echoServerTest.serverSocketCreator(portNumber)) {
 
-        assertEquals(testServerSocket.getLocalPort(), portNumber);
+            assertEquals(testServerSocket.getLocalPort(), portNumber);
+        }
     }
     @Test
     public void testClientSocketGetsCreated() throws IOException {
         ServerSocket mockServerSocket = mock(ServerSocket.class);
         when(mockServerSocket.accept()).thenReturn(new Socket());
         assertNotNull(
-                echoSocketTest.socketCreator(mockServerSocket));
+                clientSocketTest.socketCreator(mockServerSocket));
     }
 }
 
