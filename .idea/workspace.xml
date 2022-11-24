@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Create EchoServer.java, EchoServerTest.java and EchoSocket.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SocketIO.java" afterDir="false" />
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Added tests for if `ServerSocket` or `ClientSocket` connection fails from Safia review">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EchoSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EchoSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ClientSocketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ClientSocketTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +72,7 @@
       <updated>1668772247538</updated>
       <workItem from="1668772249179" duration="9503000" />
       <workItem from="1669022156776" duration="6404000" />
-      <workItem from="1669108755120" duration="1835000" />
-      <workItem from="1669111081651" duration="12682000" />
+      <workItem from="1669108755120" duration="311000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1668786009970</created>
@@ -106,21 +102,56 @@
       <option name="project" value="LOCAL" />
       <updated>1669031441570</updated>
     </task>
-    <task id="LOCAL-00005" summary="Created Echo Server spike to better understand the technical requirements.">
-      <created>1669109482969</created>
+    <task id="LOCAL-00005" summary="Create InputOutput.java &amp; InputOutputTest.java">
+      <created>1669217288469</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1669109482969</updated>
+      <updated>1669217288469</updated>
     </task>
-    <task id="LOCAL-00006" summary="Create EchoServer.java, EchoServerTest.java and EchoSocket.java">
-      <created>1669133638658</created>
+    <task id="LOCAL-00006" summary="Implements `getSocketInputStream(Socket socket)` function.">
+      <created>1669219454236</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1669133638658</updated>
+      <updated>1669219454236</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implements `sendSocketOutputStream(Socket socket)` function.">
+      <created>1669220574960</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669220574960</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Implements `readClientInputStream()` and `writeClientOutputStream()` functions and changes `EchoSocket.java` to `ClientSocket.java`">
+      <created>1669222573939</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669222573939</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add `try/catch` block to `EchoServer` from Safia's review.">
+      <created>1669286752314</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669286752314</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add `try/catch` block to `EchoServer` from Safia's review.">
+      <created>1669286980660</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669286980660</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added tests for if `ServerSocket` or `ClientSocket` connection fails from Safia review">
+      <created>1669295106684</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669295106684</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,8 +172,23 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Add README.md" />
     <MESSAGE value="Update ReadME.md" />
-    <MESSAGE value="Created Echo Server spike to better understand the technical requirements." />
-    <MESSAGE value="Create EchoServer.java, EchoServerTest.java and EchoSocket.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create EchoServer.java, EchoServerTest.java and EchoSocket.java" />
+    <MESSAGE value="Create InputOutput.java &amp; InputOutputTest.java" />
+    <MESSAGE value="Implements `getSocketInputStream(Socket socket)` function." />
+    <MESSAGE value="Implements `sendSocketOutputStream(Socket socket)` function." />
+    <MESSAGE value="Implements `readClientInputStream()` and `writeClientOutputStream()` functions" />
+    <MESSAGE value="Implements `readClientInputStream()` and `writeClientOutputStream()` functions and changes `EchoSocket.java` to `ClientSocket.java`" />
+    <MESSAGE value="Add `try/catch` block to `EchoServer` from Safia's review." />
+    <MESSAGE value="Added tests for if `ServerSocket` or `ClientSocket` connection fails from Safia review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests for if `ServerSocket` or `ClientSocket` connection fails from Safia review" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
