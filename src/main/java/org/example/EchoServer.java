@@ -5,9 +5,15 @@ import java.net.ServerSocket;
 
 public class EchoServer {
 
-    public ServerSocket serverSocketCreator(int portNumber) throws IOException {
-        ServerSocket serverSocket = new ServerSocket(portNumber);
-        System.out.println("--- Running echo server ---");
+    public ServerSocket serverSocketCreator(int portNumber) {
+        ServerSocket serverSocket = null;
+        try {
+            serverSocket = new ServerSocket(portNumber);
+            System.out.println("--- Running echo server ---");
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+            System.exit(1);
+        }
         return serverSocket;
     }
 }

@@ -27,7 +27,6 @@ public class InputOutputTest {
         assertEquals(userInput, inputOutputTest.getUserInput(bufferedReaderTest));
     }
 
-
     @Test
     public void printUserInputTest() {
         String userInput = "can we print?";

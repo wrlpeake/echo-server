@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Implements `sendSocketOutputStream(Socket socket)` function.">
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Implements `readClientInputStream()` and `writeClientOutputStream()` functions and changes `EchoSocket.java` to `ClientSocket.java`">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EchoSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EchoServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669220574960</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implements `readClientInputStream()` and `writeClientOutputStream()` functions and changes `EchoSocket.java` to `ClientSocket.java`">
+      <created>1669222573939</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669222573939</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +156,9 @@
     <MESSAGE value="Create InputOutput.java &amp; InputOutputTest.java" />
     <MESSAGE value="Implements `getSocketInputStream(Socket socket)` function." />
     <MESSAGE value="Implements `sendSocketOutputStream(Socket socket)` function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implements `sendSocketOutputStream(Socket socket)` function." />
+    <MESSAGE value="Implements `readClientInputStream()` and `writeClientOutputStream()` functions" />
+    <MESSAGE value="Implements `readClientInputStream()` and `writeClientOutputStream()` functions and changes `EchoSocket.java` to `ClientSocket.java`" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implements `readClientInputStream()` and `writeClientOutputStream()` functions and changes `EchoSocket.java` to `ClientSocket.java`" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
