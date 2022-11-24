@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Add `try/catch` block to `EchoServer` from Safia's review.">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ClientSocketTest.java" afterDir="false" />
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Added tests for if `ServerSocket` or `ClientSocket` connection fails from Safia review">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ClientSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ClientSocketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ClientSocketTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669286980660</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added tests for if `ServerSocket` or `ClientSocket` connection fails from Safia review">
+      <created>1669295106684</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669295106684</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +178,8 @@
     <MESSAGE value="Implements `readClientInputStream()` and `writeClientOutputStream()` functions" />
     <MESSAGE value="Implements `readClientInputStream()` and `writeClientOutputStream()` functions and changes `EchoSocket.java` to `ClientSocket.java`" />
     <MESSAGE value="Add `try/catch` block to `EchoServer` from Safia's review." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add `try/catch` block to `EchoServer` from Safia's review." />
+    <MESSAGE value="Added tests for if `ServerSocket` or `ClientSocket` connection fails from Safia review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added tests for if `ServerSocket` or `ClientSocket` connection fails from Safia review" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
