@@ -1,22 +1,17 @@
 package org.example;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 import java.net.ServerSocket;
-import java.net.Socket;
 
 class EchoServerTest {
 
     public EchoServer echoServerTest = new EchoServer();
-    public ClientSocket clientSocketTest = new ClientSocket();
 
     @Test
-    public void testServerSocketGetsCreated() throws IOException {
+    public void testServerSocketGetsCreated() {
         assertNotNull(echoServerTest.serverSocketCreator(8080));
     }
 
@@ -28,13 +23,18 @@ class EchoServerTest {
             assertEquals(testServerSocket.getLocalPort(), portNumber);
         }
     }
+
     @Test
-    public void testClientSocketGetsCreated() throws IOException {
-        ServerSocket mockServerSocket = mock(ServerSocket.class);
-        when(mockServerSocket.accept()).thenReturn(new Socket());
-        assertNotNull(
-                clientSocketTest.socketCreator(mockServerSocket));
+    public void testServerSocketCreatorThrowsPortError() {
+        int portNumber = -1;
+        String errorMessage = "Port value out of range: " + portNumber;
+        Throwable exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> echoServerTest.serverSocketCreator(portNumber)
+        );
+        assertEquals(errorMessage, exception.getMessage());
     }
+
 }
 
 
