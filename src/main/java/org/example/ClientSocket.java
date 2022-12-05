@@ -10,10 +10,10 @@ public class ClientSocket {
         Socket clientSocket;
         try {
             clientSocket = socket.accept();
-            System.out.println("--- Connected to echo server ---");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
         return clientSocket;
     }
+
 }

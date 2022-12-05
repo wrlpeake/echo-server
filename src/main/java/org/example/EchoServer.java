@@ -2,18 +2,30 @@ package org.example;
 
 import java.io.IOException;
 import java.net.ServerSocket;
+import java.net.Socket;
 
 public class EchoServer {
 
-    public ServerSocket serverSocketCreator(int portNumber) {
-        ServerSocket serverSocket = null;
-        try {
-            serverSocket = new ServerSocket(portNumber);
-            System.out.println("--- Running echo server ---");
-        } catch (IOException ioException) {
-            ioException.printStackTrace();
-            System.exit(1);
+    private final ServerSocket serverSocket;
+
+    public EchoServer(ServerSocket serverSocket) {
+        this.serverSocket = serverSocket;
+    }
+
+    public void start() throws IOException {
+        ClientSocket clientSocket = new ClientSocket();
+
+        System.out.println("[STARTING ECHO SERVER]");
+
+        while (!serverSocket.isClosed()) {
+            try {
+                Socket client = clientSocket.socketCreator(this.serverSocket);
+                new ClientHandler(client).start();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            serverSocket.close();
         }
-        return serverSocket;
+
     }
 }

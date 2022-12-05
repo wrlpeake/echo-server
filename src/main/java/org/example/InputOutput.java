@@ -8,12 +8,15 @@ import java.net.Socket;
 
 public class InputOutput {
 
-    public String getUserInput(BufferedReader bufferedReader) throws IOException {
-        return bufferedReader.readLine();
+    public String getUserInput() throws IOException {
+        BufferedReader consoleInput =
+                new BufferedReader(
+                        new InputStreamReader(System.in));
+        return consoleInput.readLine();
     }
 
-    public void printUserInput(String userInput) {
-        System.out.println(userInput);
+    public void printMessage(String message) {
+        System.out.println(message);
     }
 
     public BufferedReader getSocketInputStream(Socket socket) throws IOException {
@@ -21,7 +24,7 @@ public class InputOutput {
                 new InputStreamReader(socket.getInputStream()));
     }
 
-    public PrintWriter sendSocketOutputStream(Socket socket) throws IOException {         // 2nd statement
+    public PrintWriter sendSocketOutputStream(Socket socket) throws IOException {
         return new PrintWriter(socket.getOutputStream(), true);
     }
 
@@ -32,4 +35,5 @@ public class InputOutput {
     public void writeClientOutputStream(PrintWriter writer, String clientMessage) {
         writer.println(clientMessage);
     }
+
 }

@@ -10,14 +10,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 public class ClientSocketTest {
-    public ClientSocket clientSocketTest = new ClientSocket();
+    public ClientSocket clientTest = new ClientSocket();
 
     @Test
     public void testClientSocketGetsCreated() throws IOException {
         ServerSocket mockServerSocket = mock(ServerSocket.class);
         when(mockServerSocket.accept()).thenReturn(new Socket());
         assertNotNull(
-                clientSocketTest.socketCreator(mockServerSocket));
+                clientTest.socketCreator(mockServerSocket));
         verify(mockServerSocket, times(1)).accept();
     }
 
@@ -28,7 +28,7 @@ public class ClientSocketTest {
                 () -> {
                     ServerSocket mockServerSocket = mock(ServerSocket.class);
                     when(mockServerSocket.accept()).thenThrow(IOException.class);
-                    clientSocketTest.socketCreator(mockServerSocket);
+                    clientTest.socketCreator(mockServerSocket);
                 }
         );
         assertEquals("java.io.IOException", exception.getMessage());

@@ -3,25 +3,23 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.net.ServerSocket;
 
-class EchoServerTest {
+class ServerSocketTest {
 
-    public EchoServer echoServerTest = new EchoServer();
+    public EchoServerSocket serverSocketTest = new EchoServerSocket();
 
     @Test
     public void testServerSocketGetsCreated() {
-        assertNotNull(echoServerTest.serverSocketCreator(8080));
+        assertNotNull(serverSocketTest.serverSocketCreator(8080));
     }
 
     @Test
-    public void testServerSocketCreatedWithCorrectPort() throws IOException {
+    public void testServerSocketCreatedWithCorrectPort() {
         int portNumber = 7777;
-        try (ServerSocket testServerSocket = echoServerTest.serverSocketCreator(portNumber)) {
+        ServerSocket testServerSocket = serverSocketTest.serverSocketCreator(portNumber);
 
-            assertEquals(testServerSocket.getLocalPort(), portNumber);
-        }
+        assertEquals(testServerSocket.getLocalPort(), portNumber);
     }
 
     @Test
@@ -30,7 +28,7 @@ class EchoServerTest {
         String errorMessage = "Port value out of range: " + portNumber;
         Throwable exception = assertThrows(
                 IllegalArgumentException.class,
-                () -> echoServerTest.serverSocketCreator(portNumber)
+                () -> serverSocketTest.serverSocketCreator(portNumber)
         );
         assertEquals(errorMessage, exception.getMessage());
     }

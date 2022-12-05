@@ -20,11 +20,10 @@ public class InputOutputTest {
     @Test
     public void getUserInputTest() throws IOException {
         String userInput = "hello world";
-        BufferedReader bufferedReaderTest =                                       // 4th statement
-                new BufferedReader(
-                        new InputStreamReader(new ByteArrayInputStream(userInput.getBytes())));
+        System.setIn(new ByteArrayInputStream(userInput.getBytes()));
+        String getUserInput = inputOutputTest.getUserInput();
 
-        assertEquals(userInput, inputOutputTest.getUserInput(bufferedReaderTest));
+        assertEquals(userInput, getUserInput);
     }
 
     @Test
@@ -33,7 +32,7 @@ public class InputOutputTest {
 
         PrintStream mockPrintStream = Mockito.mock(PrintStream.class);
         System.setOut(mockPrintStream);
-        inputOutputTest.printUserInput(userInput);
+        inputOutputTest.printMessage(userInput);
 
         Mockito.verify(mockPrintStream).println(userInput);
     }
