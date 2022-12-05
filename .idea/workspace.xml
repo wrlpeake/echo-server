@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Create EchoServer.java, EchoServerTest.java and EchoSocket.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AppController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EchoServerSocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ClientHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ClientSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EchoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ClientSocketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ServerSocketTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Large commit which unblocked several issues with echo server and client connection." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669133638658</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Large commit which unblocked several issues with echo server and client connection.">
+      <created>1670261963704</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670261963704</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +144,7 @@
     <MESSAGE value="Update ReadME.md" />
     <MESSAGE value="Created Echo Server spike to better understand the technical requirements." />
     <MESSAGE value="Create EchoServer.java, EchoServerTest.java and EchoSocket.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create EchoServer.java, EchoServerTest.java and EchoSocket.java" />
+    <MESSAGE value="Large commit which unblocked several issues with echo server and client connection." />
+    <option name="LAST_COMMIT_MESSAGE" value="Large commit which unblocked several issues with echo server and client connection." />
   </component>
 </project>
