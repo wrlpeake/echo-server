@@ -20,17 +20,22 @@ public class ClientHandler extends Thread {
             PrintWriter out = io.sendSocketOutputStream(clientSocket);
             String userInput;
             while((userInput = io.readClientInputStream(in)) != null) {
+                System.out.printf("[FROM CLIENT] %s%n", userInput);
                 if (userInput.equals("end")) {
-                    io.writeClientOutputStream(out, "[SHUTTING DOWN ECHO SERVER]");
+                    returnMessage(out, "[SHUTTING DOWN ECHO SERVER]");
                     System.out.println("[SHUTTING DOWN]");
                     return;
                 }
-                io.writeClientOutputStream(out, userInput);
+                returnMessage(out, userInput);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
+    }
+
+    public void returnMessage(PrintWriter out, String message) {
+        io.writeClientOutputStream(out, message);
     }
 
 }

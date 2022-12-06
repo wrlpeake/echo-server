@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Large commit which unblocked several issues with echo server and client connection." />
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Changes `ClientTest.java` to `ClientSocketTest.java` and related names in the file.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientSpy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ClientHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ClientHandlerTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670261963704</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Changes `ClientTest.java` to `ClientSocketTest.java` and related names in the file.">
+      <created>1670262314862</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670262314862</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +157,7 @@
     <MESSAGE value="Created Echo Server spike to better understand the technical requirements." />
     <MESSAGE value="Create EchoServer.java, EchoServerTest.java and EchoSocket.java" />
     <MESSAGE value="Large commit which unblocked several issues with echo server and client connection." />
-    <option name="LAST_COMMIT_MESSAGE" value="Large commit which unblocked several issues with echo server and client connection." />
+    <MESSAGE value="Changes `ClientTest.java` to `ClientSocketTest.java` and related names in the file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes `ClientTest.java` to `ClientSocketTest.java` and related names in the file." />
   </component>
 </project>
