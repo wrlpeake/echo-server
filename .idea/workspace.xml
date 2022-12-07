@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Changes `ClientTest.java` to `ClientSocketTest.java` and related names in the file.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientSpy.java" afterDir="false" />
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Adding `ClientHandler` tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EchoServerInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EchoServerSpy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TestClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ClientHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ClientHandlerTest.java" afterDir="false" />
     </list>
@@ -23,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -60,6 +64,12 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="org.example" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.example" />
     </key>
@@ -133,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670262314862</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding `ClientHandler` tests">
+      <created>1670331502080</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670331502080</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +175,7 @@
     <MESSAGE value="Create EchoServer.java, EchoServerTest.java and EchoSocket.java" />
     <MESSAGE value="Large commit which unblocked several issues with echo server and client connection." />
     <MESSAGE value="Changes `ClientTest.java` to `ClientSocketTest.java` and related names in the file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes `ClientTest.java` to `ClientSocketTest.java` and related names in the file." />
+    <MESSAGE value="Adding `ClientHandler` tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding `ClientHandler` tests" />
   </component>
 </project>

@@ -23,7 +23,8 @@ public class ClientHandler extends Thread {
                 System.out.printf("[FROM CLIENT] %s%n", userInput);
                 if (userInput.equals("end")) {
                     returnMessage(out, "[SHUTTING DOWN ECHO SERVER]");
-                    System.out.println("[SHUTTING DOWN]");
+                    System.out.println("[SHUTTING DOWN ECHO SERVER]");
+                    this.clientSocket.close();
                     return;
                 }
                 returnMessage(out, userInput);

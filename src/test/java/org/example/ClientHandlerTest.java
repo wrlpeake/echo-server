@@ -2,34 +2,35 @@ package org.example;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import java.io.*;
 import java.net.ServerSocket;
-import java.net.Socket;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ClientHandlerTest {
-    ClientHandler clientHandler;
+
     ServerSocket serverSocket;
-    Socket socket;
-    PrintStream mockPrintStream;
+    TestClient client;
+    EchoServer echoServer;
 
     @BeforeEach
     public void setup() throws IOException {
         int portNumber = 8888;
         serverSocket = new ServerSocket(portNumber);
-        socket = new Socket("localhost", portNumber);
-        mockPrintStream = Mockito.mock(PrintStream.class);
-        System.setOut(mockPrintStream);
+        echoServer = new EchoServer(serverSocket);
+        client = new TestClient(portNumber);
     }
 
     @Test
-    public void hasStartBeenCalledTest() {
-        String message = "[CLIENT CONNECTED]";
-        clientHandler = new ClientHandler(socket);
-        clientHandler.start();
-
-        Mockito.verify(mockPrintStream).println(message);
+    public void echoServerReturnsMessagesTest() throws IOException {
+        assertEquals("Connected on Port: 8888", client.start());
+        echoServer.start();
+        assertEquals("hello", client.sendAndReceiveMessage("hello"));
+        assertEquals("world", client.sendAndReceiveMessage("world"));
+        assertEquals("[SHUTTING DOWN ECHO SERVER]", client.sendAndReceiveMessage("end"));
+        assertEquals("ERROR", client.sendAndReceiveMessage("after shutdown, message should not be returned"));
+        assertEquals("ERROR", client.sendAndReceiveMessage("after shutdown, message should not be returned"));
     }
 
 }
