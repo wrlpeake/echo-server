@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Adding `ClientHandler` tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EchoServerInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/EchoServerSpy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TestClient.java" afterDir="false" />
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Adds end-to-end `echoServerReturnsMessages` test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ClientHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/ClientHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670331502080</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Adds end-to-end `echoServerReturnsMessages` test">
+      <created>1670418728927</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670418728927</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +180,7 @@
     <MESSAGE value="Large commit which unblocked several issues with echo server and client connection." />
     <MESSAGE value="Changes `ClientTest.java` to `ClientSocketTest.java` and related names in the file." />
     <MESSAGE value="Adding `ClientHandler` tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding `ClientHandler` tests" />
+    <MESSAGE value="Adds end-to-end `echoServerReturnsMessages` test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds end-to-end `echoServerReturnsMessages` test" />
   </component>
 </project>
