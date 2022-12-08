@@ -7,10 +7,11 @@ import java.net.Socket;
 
 public class ClientHandler extends Thread {
     private final Socket clientSocket;
-    InputOutput io = new InputOutput();
+    private final InputOutput io;
 
     public ClientHandler(Socket socket) {
         this.clientSocket = socket;
+        io = new InputOutput();
     }
 
     public void run() {
