@@ -23,12 +23,12 @@ public class EchoMessageBus extends Thread {
             while((userInput = io.readClientInputStream(in)) != null) {
                 System.out.printf("[FROM CLIENT] %s%n", userInput);
                 if (userInput.equals("end")) {
-                    returnMessage(out, "[SHUTTING DOWN ECHO SERVER]");
+                    publishMessage(out, "[SHUTTING DOWN ECHO SERVER]");
                     System.out.println("[SHUTTING DOWN ECHO SERVER]");
                     this.clientSocket.close();
                     return;
                 }
-                returnMessage(out, userInput);
+                publishMessage(out, userInput);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -36,8 +36,9 @@ public class EchoMessageBus extends Thread {
 
     }
 
-    public void returnMessage(PrintWriter out, String message) {
+    public void publishMessage(PrintWriter out, String message) {
         io.writeClientOutputStream(out, message);
     }
 
 }
+
