@@ -14,16 +14,12 @@ public class EchoServer {
 
     public void start() throws IOException {
         System.out.println("[STARTING ECHO SERVER]");
-
-        while (!serverSocket.isClosed()) {
-            try {
-                Socket client = this.serverSocket.accept();
-                new ClientHandler(client).start();
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-            serverSocket.close();
+        try {
+            Socket client = this.serverSocket.accept();
+            new ClientHandler(client).start();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
         }
-
+        serverSocket.close();
     }
 }

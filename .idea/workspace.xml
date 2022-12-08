@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Changes `EchoServerSocket` to `ServerSocketFactory` and accompanying tests.">
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Extracted `InputOutput io` to a constructor parameter (from Sergii's review)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/EchoServer.java" afterDir="false" />
     </list>
@@ -166,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670506326373</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Removes redundant `ClientSocket` class">
+      <created>1670506877321</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1670506877321</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Extracted `InputOutput io` to a constructor parameter (from Sergii's review)">
+      <created>1670507172812</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1670507172813</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +209,8 @@
     <MESSAGE value="Adds end-to-end `echoServerReturnsMessages` test" />
     <MESSAGE value="Update README and `build.gradle` / `settings.gradle`" />
     <MESSAGE value="Changes `EchoServerSocket` to `ServerSocketFactory` and accompanying tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes `EchoServerSocket` to `ServerSocketFactory` and accompanying tests." />
+    <MESSAGE value="Removes redundant `ClientSocket` class" />
+    <MESSAGE value="Extracted `InputOutput io` to a constructor parameter (from Sergii's review)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extracted `InputOutput io` to a constructor parameter (from Sergii's review)" />
   </component>
 </project>
