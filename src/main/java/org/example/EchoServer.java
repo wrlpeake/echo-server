@@ -13,13 +13,11 @@ public class EchoServer {
     }
 
     public void start() throws IOException {
-        ClientSocket clientSocket = new ClientSocket();
-
         System.out.println("[STARTING ECHO SERVER]");
 
         while (!serverSocket.isClosed()) {
             try {
-                Socket client = clientSocket.socketCreator(this.serverSocket);
+                Socket client = this.serverSocket.accept();
                 new ClientHandler(client).start();
             } catch (Exception e) {
                 throw new RuntimeException(e);
