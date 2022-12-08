@@ -15,7 +15,7 @@ public class EchoServer {
     public void start() throws IOException {
         System.out.println("[STARTING ECHO SERVER]");
         Socket client = this.serverSocket.accept();
-        new ClientHandler(client).start();
+        new EchoMessageBus(client).start();
         serverSocket.close();
     }
 }

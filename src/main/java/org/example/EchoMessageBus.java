@@ -5,11 +5,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class ClientHandler extends Thread {
+public class EchoMessageBus extends Thread {
     private final Socket clientSocket;
     private final InputOutput io;
 
-    public ClientHandler(Socket socket) {
+    public EchoMessageBus(Socket socket) {
         this.clientSocket = socket;
         io = new InputOutput();
     }

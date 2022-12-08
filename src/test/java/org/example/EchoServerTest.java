@@ -8,7 +8,7 @@ import java.net.ServerSocket;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ClientHandlerTest {
+public class EchoServerTest {
 
     ServerSocket serverSocket;
     TestClient client;
