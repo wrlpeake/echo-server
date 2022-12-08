@@ -3,9 +3,9 @@ package org.example;
 import java.io.IOException;
 import java.net.ServerSocket;
 
-public class EchoServerSocket {
+public class SocketServerFactory {
 
-    public ServerSocket serverSocketCreator(int portNumber) {
+    public ServerSocket create(int portNumber) {
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(portNumber);

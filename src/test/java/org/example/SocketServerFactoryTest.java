@@ -5,19 +5,19 @@ import org.junit.jupiter.api.Test;
 
 import java.net.ServerSocket;
 
-class ServerSocketTest {
+class SocketServerFactoryTest {
 
-    public EchoServerSocket serverSocketTest = new EchoServerSocket();
+    public SocketServerFactory socketServerFactoryTest = new SocketServerFactory();
 
     @Test
     public void testServerSocketGetsCreated() {
-        assertNotNull(serverSocketTest.serverSocketCreator(8080));
+        assertNotNull(socketServerFactoryTest.create(8080));
     }
 
     @Test
     public void testServerSocketCreatedWithCorrectPort() {
         int portNumber = 7777;
-        ServerSocket testServerSocket = serverSocketTest.serverSocketCreator(portNumber);
+        ServerSocket testServerSocket = socketServerFactoryTest.create(portNumber);
 
         assertEquals(testServerSocket.getLocalPort(), portNumber);
     }
@@ -28,7 +28,7 @@ class ServerSocketTest {
         String errorMessage = "Port value out of range: " + portNumber;
         Throwable exception = assertThrows(
                 IllegalArgumentException.class,
-                () -> serverSocketTest.serverSocketCreator(portNumber)
+                () -> socketServerFactoryTest.create(portNumber)
         );
         assertEquals(errorMessage, exception.getMessage());
     }
