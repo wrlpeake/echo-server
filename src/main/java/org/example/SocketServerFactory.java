@@ -12,7 +12,6 @@ public class SocketServerFactory {
             System.out.println("--- Created Server Socket ---");
         } catch (IOException ioException) {
             ioException.printStackTrace();
-            System.exit(1);
         }
         return serverSocket;
     }

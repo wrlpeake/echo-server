@@ -28,7 +28,6 @@ public class TestClient {
 
             BufferedReader in = io.getSocketInputStream(socket);
             receivedMessage = io.readClientInputStream(in);
-
         } catch (IOException e){
             receivedMessage = "ERROR";
         }
