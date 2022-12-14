@@ -18,7 +18,11 @@ public class InputOutput {
     }
 
     public String readClientInputStream(BufferedReader inputStream) throws IOException {
-            return inputStream.readLine();
+        String message = inputStream.readLine();
+        if (message == null) {
+            message = "ERROR";
+        }
+        return message;
     }
 
     public void writeClientOutputStream(PrintWriter writer, String clientMessage) {

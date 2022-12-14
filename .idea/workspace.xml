@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Removed redundant `System.exit(1);` from `ServerSocketFactory`">
-      <change afterPath="$PROJECT_DIR$/src/main/java/echo/EchoMessageBus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/echo/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EchoMessageBus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/echo/EchoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/InputOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/echo/InputOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SocketServerFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/echo/TestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/EchoServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/echo/EchoServerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/InputOutputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/echo/InputOutputTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/SocketServerFactoryTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="626fba06-9972-4b5a-b6e3-ddb2029d20d5" name="Changes" comment="Impolements multiple changes to the project structure from Sergii's PR review." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +84,7 @@
       <workItem from="1669108755120" duration="1835000" />
       <workItem from="1669111081651" duration="12682000" />
       <workItem from="1670952211267" duration="14275000" />
-      <workItem from="1671037569355" duration="805000" />
+      <workItem from="1671037569355" duration="1164000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1668786009970</created>
@@ -233,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670509069825</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Impolements multiple changes to the project structure from Sergii's PR review.">
+      <created>1671038722694</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1671038722694</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +262,8 @@
     <MESSAGE value="Renamed `ClientHandler` to `EchoMessageBus` (from Sergii's review)" />
     <MESSAGE value="Renamed `returnMessage()` to `publishMessage()` in `EchoMessageBus`" />
     <MESSAGE value="Removed redundant `System.exit(1);` from `ServerSocketFactory`" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed redundant `System.exit(1);` from `ServerSocketFactory`" />
+    <MESSAGE value="Impolements multiple changes to the project structure from Sergii's PR review." />
+    <option name="LAST_COMMIT_MESSAGE" value="Impolements multiple changes to the project structure from Sergii's PR review." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Echo_Server$EchoServerTest.ic" NAME="EchoServerTest Coverage Results" MODIFIED="1671037991311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
