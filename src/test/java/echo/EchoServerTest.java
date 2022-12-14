@@ -1,4 +1,4 @@
-package org.example;
+package echo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -24,12 +24,11 @@ public class EchoServerTest {
 
     @Test
     public void echoServerReturnsMessagesTest() throws IOException {
-        assertEquals("Connected on Port: 8888", client.start());
         echoServer.start();
+        assertEquals("Connected on Port: 8888", client.start());
         assertEquals("hello", client.sendAndReceiveMessage("hello"));
         assertEquals("world", client.sendAndReceiveMessage("world"));
         assertEquals("[SHUTTING DOWN ECHO SERVER]", client.sendAndReceiveMessage("end"));
-        assertEquals("ERROR", client.sendAndReceiveMessage("after shutdown, message should not be returned"));
         assertEquals("ERROR", client.sendAndReceiveMessage("after shutdown, message should not be returned"));
     }
 

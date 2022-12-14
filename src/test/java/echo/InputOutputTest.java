@@ -1,4 +1,4 @@
-package org.example;
+package echo;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -16,26 +16,6 @@ public class InputOutputTest {
     Socket mockSocket = Mockito.mock(Socket.class);
     InputStream mockInputStream = Mockito.mock(InputStream.class);
     OutputStream mockOutputStream = Mockito.mock(OutputStream.class);
-
-    @Test
-    public void getUserInputTest() throws IOException {
-        String userInput = "hello world";
-        System.setIn(new ByteArrayInputStream(userInput.getBytes()));
-        String getUserInput = inputOutputTest.getUserInput();
-
-        assertEquals(userInput, getUserInput);
-    }
-
-    @Test
-    public void printUserInputTest() {
-        String userInput = "can we print?";
-
-        PrintStream mockPrintStream = Mockito.mock(PrintStream.class);
-        System.setOut(mockPrintStream);
-        inputOutputTest.printMessage(userInput);
-
-        Mockito.verify(mockPrintStream).println(userInput);
-    }
 
     @Test
     public void getSocketInputStreamTest() throws IOException {

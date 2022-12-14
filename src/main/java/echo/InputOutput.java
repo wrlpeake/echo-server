@@ -1,4 +1,4 @@
-package org.example;
+package echo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,20 +8,9 @@ import java.net.Socket;
 
 public class InputOutput {
 
-    public String getUserInput() throws IOException {
-        BufferedReader consoleInput =
-                new BufferedReader(
-                        new InputStreamReader(System.in));
-        return consoleInput.readLine();
-    }
-
-    public void printMessage(String message) {
-        System.out.println(message);
-    }
-
     public BufferedReader getSocketInputStream(Socket socket) throws IOException {
-        return new BufferedReader(
-                new InputStreamReader(socket.getInputStream()));
+            return new BufferedReader(
+                    new InputStreamReader(socket.getInputStream()));
     }
 
     public PrintWriter sendSocketOutputStream(Socket socket) throws IOException {
@@ -29,7 +18,7 @@ public class InputOutput {
     }
 
     public String readClientInputStream(BufferedReader inputStream) throws IOException {
-        return inputStream.readLine();
+            return inputStream.readLine();
     }
 
     public void writeClientOutputStream(PrintWriter writer, String clientMessage) {

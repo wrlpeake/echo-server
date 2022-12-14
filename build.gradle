@@ -4,7 +4,7 @@ plugins {
 }
 
 application {
-    mainClass = 'org.example.App'
+    mainClass = 'echo.App'
 }
 
 group 'org.example'

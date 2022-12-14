@@ -1,4 +1,4 @@
-package org.example;
+package echo;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -21,18 +21,15 @@ public class TestClient {
     }
 
     public String sendAndReceiveMessage(String userInput) {
-        String receivedMessage;
         try {
             PrintWriter writer = io.sendSocketOutputStream(socket);
             io.writeClientOutputStream(writer, userInput);
 
             BufferedReader in = io.getSocketInputStream(socket);
-            receivedMessage = io.readClientInputStream(in);
+            return io.readClientInputStream(in);
         } catch (IOException e){
-            receivedMessage = "ERROR";
+            return "ERROR";
         }
-        System.out.printf("[FROM ECHO SERVER] %s%n", receivedMessage);
-        return receivedMessage;
     }
 
 }
